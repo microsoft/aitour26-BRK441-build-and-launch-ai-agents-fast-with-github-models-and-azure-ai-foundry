@@ -110,11 +110,11 @@ By the end of this session, learners will be able to:
 </b></sub></a><br />
             <a href="https://github.com/aprilgittens" title="talk">📢</a> 
     </td>
-    <td align="center"><a href="http://github.com/mikekinsman">
-        <img src="https://github.com/mikekinsman.png" width="100px;" alt="Bethany Jepchumba"/><br />
+    <td align="center"><a href="http://github.com/bethanyjep">
+        <img src="https://github.com/bethanyjep.png" width="100px;" alt="Bethany Jepchumba"/><br />
         <sub><b>Bethany Jepchumba
 </b></sub></a><br />
-            <a href="https://github.com/mikekinsman" title="talk">📢</a> 
+            <a href="https://github.com/bethanyjep" title="talk">📢</a> 
     </td>
 </tr></table>
 
