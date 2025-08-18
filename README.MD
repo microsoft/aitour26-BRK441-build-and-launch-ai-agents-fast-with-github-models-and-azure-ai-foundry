@@ -52,33 +52,35 @@ Delete this line and everything above it!
 
 # [Microsoft AI Tour 2026](https://aitour.microsoft.com)
 
-## 🔥BRKXXX: Build & Launch LLM Apps Fast with GitHub Models + Azure AI Foundry
+## 🔥BRK441: Build and launch AI agents fast with GitHub Models and Azure AI Foundry
 
 If you will be delivering this session, check the [session-delivery-sources](./session-delivery-resources/) folder for slides, scripts, and other resources.
 
 ### Session Description
 
-*Add Session Description*
-
+Build and ship AI agents faster with GitHub Models and Azure. Prototype with open models, scale with Azure AI Foundry models, and streamline workflows using the AI Toolkit in VS Code. Experiment with models and prompts, evaluate agent responses, then move from prototype to cloud with cutting-edge developer tools.
 
 ### 🧠 Learning Outcomes
 
 By the end of this session, learners will be able to:
 
--  
--
--
+- Explore and compare models with the AI Toolkit Playground; iterate over prompts using the Agent Builder and evaluate results on a test dataset.
+- Move from prototype to code, combining your models and prompts with your app code with Visual Studio Code and Azure AI Foundry.
+- Go smoothly into production by leveraging pre-built enterprise-ready features of Azure AI Foundry to deploy, safeguard and monitor your AI agent over time.
 
 ### 💻 Technologies Used
 
-1.
-1.
-1.
+1. Visual Studio Code
+1. AI Toolkit extension for Visual Studio Code
+1. GitHub Copilot Agent Mode
+1. GitHub Copilot for Azure
 
 ### 🔗 Session Resources
 | Resources          | Links                             | Description        |
 |:-------------------|:----------------------------------|:-------------------|
-| Additional Resources for this session | https://learn.microsoft.com | Links specific to this session |
+| AI Toolkit | https://aka.ms/AIToolkit |  A comprehensive extension that empowers developers and AI engineers to build, test, and deploy intelligent applications using generative AI models |
+| GitHub Copilot Agent Mode | https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode |  With chat agent mode in Visual Studio Code, you can use natural language to specify a high-level task, and let AI autonomously reason about the request, plan the work needed, and apply the changes to your codebase. |
+| GitHub Copilot for Azure | https://learn.microsoft.com/azure/developer/github-copilot-azure/get-started |  Get started with GitHub Copilot for Azure to streamline your development workflow and enhance your productivity on the Azure platform. |
 
 ### 📚 Continued Learning Resources
 | Resources          | Links                             | Description        |
@@ -101,17 +103,16 @@ By the end of this session, learners will be able to:
 
 <table>
 <tr>
-    <td align="center"><a href="http://github.com/mikekinsman">
-        <img src="https://github.com/mikekinsman.png" width="100px;" alt="INSERT NAME HERE"
+    <td align="center"><a href="http://github.com/aprilgitens">
+        <img src="https://github.com/aprilgittens.png" width="100px;" alt="April Gittens"
 "/><br />
-        <sub><b> INSERT NAME HERE
+        <sub><b> April Gittens
 </b></sub></a><br />
-            <a href="https://github.com/mikekinsman" title="talk">📢</a> 
+            <a href="https://github.com/aprilgittens" title="talk">📢</a> 
     </td>
     <td align="center"><a href="http://github.com/mikekinsman">
-        <img src="https://github.com/mikekinsman.png" width="100px;" alt="INSERT NAME HERE
-"/><br />
-        <sub><b>INSERT NAME HERE
+        <img src="https://github.com/mikekinsman.png" width="100px;" alt="Bethany Jepchumba"/><br />
+        <sub><b>Bethany Jepchumba
 </b></sub></a><br />
             <a href="https://github.com/mikekinsman" title="talk">📢</a> 
     </td>
