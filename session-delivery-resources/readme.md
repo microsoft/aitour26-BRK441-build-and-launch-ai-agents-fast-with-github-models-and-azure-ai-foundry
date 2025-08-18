@@ -20,18 +20,72 @@ Prior to delivering the workshop please:
 
 ## 🚀Get Started
 
-The workshop is divided into multiple sections including 16 slides, 1 demo and 2 hands on labs.
+The breakout is divided into multiple sections including 32 slides and 6 demos.
 
 ### 🕐Timing
 
 | Time        | Description 
 --------------|-------------
-0:00 - 5:00   | Intro and overview
-5:00 - 70:00  | Session Steps
-70:00 - 75:00 | Wrap up and Q&A
-
-### 🏋️Preparation
-Preparation Notes go here
+0:00 - 0:00   | Intro and overview
+0:00 - 0:00   | GenAI ops
+0:00 - 0:00   | Meet the models
+0:00 - 0:00   | Design your agent
+0:00 - 0:00   | Evaluate your agent responses
+0:00 - 0:00   | From prototype to production
+0:00 - 0:00   | Wrap up and Q&A
 
 ### 🖥️Demos
-Description of demos goes here
+
+| Demo        | Description 
+--------------|-------------
+Explore and compare models   | Browse the model **Catalog** in the AI Toolkit and compare 2 models within the **Playground**
+Create agents with Agent Builder   | Create the Cora agent in the **Agent Builder** and define it's system prompt
+Add tools to an agent in Agent Builder   | Connect the Cora agent to the **Zava MCP server** and add the **get_products_by_name** tool
+Evaluate agent responses   | Run both manual and AI-assisted evaluations for the agent output
+Export agent code   | Export the code from the **Agent Builder** for the Cora agent
+Cora app   | Chat with the Cora agent live via the agent UI
+
+### 🏋️Preparation
+This demo is designed to be run in a development container for easy setup. The container includes the following:
+- PostgresSQL dataset for Zava
+- **Customer Sales Server** that does basic product search using traditional name-based matching
+
+#### Prerequisites
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running
+- Azure AI Foundry project with a **GPT-4o** model deployment
+- [Visual Studio Code](https://code.visualstudio.com)
+
+**Open the repository in the dev container**
+
+1. Open **Docker Desktop**.
+1. Fork and clone this repository in Visual Studio Code.
+1. When prompted by Visual Studio Code, select to "Reopen in Container". Alternatively, open the **Command Palette** (i.e. CTRL/CMD+Shift+P) and enter **Dev Containers: Reopen in Container**.
+1. Wait for the setup to complete. The dev container will build automatically with all dependencies pre-installed. This includes PostgresSQL with pgvector extension, a Python environment, and all required packages.
+
+**Install extensions inside the container**
+
+In Visual Studio Code, select the **Extensions** icon in the **Activity Bar** and install the following extensions:
+- [Azure Resources](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups)
+- [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+- [AI Toolkit](https://aka.ms/AIToolkit)
+
+**Sign-in to the Azure Resources extension and set your default project.**
+
+1. In the **Azure Resources** extension, select **Sign in to Azure**.
+1. Sign-in to the account that has your Azure AI Foundry project and GPT-4o deployed model.
+1. Open the **Azure AI Foundry** extension (*note: the Azure AI Foundry extension comes installed with the AI Toolkit*).
+1. Under the **Resources** section, confirm whether your Azure AI Foundry project is set as the default project. The default project displays under **Resources** with a **Default** label.
+1. If your project is **not** set as the default project, hover over the project name and click the **Switch Default Project in Azure Extension** icon (*note: the icon looks like 3 lines*).
+1. In the **Pick a project** window, select the subscription that has your Azure AI Foundry project.
+1. In the **Pick a project** window, select your Azure AI Foundry project.
+
+**Start the Customer Sales Server**
+
+1. Open the **.vscode/mcp.json** file.
+1. Click **Start** above the **zava-customer-sales-stdio** server.
+
+**Start the Cora web app**
+
+1. In the terminal, run the command `python app.py`.
+1. In the browser, navigate to [htts://localhost:8000](http://localhost:8000).
+1. Confirm that the green **Connected** label displays in the top-right of the UI.
