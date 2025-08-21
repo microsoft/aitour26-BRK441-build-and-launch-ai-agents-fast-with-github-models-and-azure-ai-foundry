@@ -49,6 +49,7 @@ The breakout is divided into multiple sections including 32 slides and 6 demos.
 This demo is designed to be run in a development container for easy setup. The container includes the following:
 - PostgresSQL dataset for Zava
 - **Customer Sales Server** that does basic product search using traditional name-based matching
+- A web app of the Cora agent app
 
 #### Prerequisites
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running
@@ -87,7 +88,7 @@ If any extension is missing, install before moving forward.
 1. In the terminal, run the command: `copy .env.example .env`
 1. Open your new `.env` file.
 1. Enter your `AZURE_AI_API_KEY="<your_Azure_AI_API_key>"` (note: The **Key** in the **Endpoint** section for your model deployment )
-1. Enter your `AZURE_AI_ENDPOINT="<your_Azure_AI_endpoint>"` (note: The **Target URI** in the Endpoint section for your model deployment; ex: https://{your-custom-endpoint}.openai.azure.com/openai/deployments/gpt-4o)
+1. Enter your `AZURE_AI_ENDPOINT="<your_Azure_AI_endpoint>"` (note: The **Target URI** in the Endpoint section for your model deployment up until the deployment name; ex: https://{your-custom-endpoint}-resource.cognitiveservices.azure.com/openai/deployments/gpt-4o)
 
 **Start the Customer Sales Server**
 
