@@ -62,12 +62,16 @@ This demo is designed to be run in a development container for easy setup. The c
 1. When prompted by Visual Studio Code, select to "Reopen in Container". Alternatively, open the **Command Palette** (i.e. CTRL/CMD+Shift+P) and enter **Dev Containers: Reopen in Container**.
 1. Wait for the setup to complete. The dev container will build automatically with all dependencies pre-installed. This includes PostgresSQL with pgvector extension, a Python environment, and all required packages.
 
-**Install extensions inside the container**
+**Confirm extensions are installed**
 
-In Visual Studio Code, select the **Extensions** icon in the **Activity Bar** and install the following extensions:
+Confirm that the dev container has installed the following extensions:
 - [Azure Resources](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups)
 - [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 - [AI Toolkit](https://aka.ms/AIToolkit)
+
+If any extension is missing, install before moving forward.
+
+*Note: The [Azure AI Foundry](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.vscode-ai-foundry) extension is installed as a bundle with the AI Toolkit*.
 
 **Sign-in to the Azure Resources extension and set your default project.**
 
@@ -78,6 +82,12 @@ In Visual Studio Code, select the **Extensions** icon in the **Activity Bar** an
 1. If your project is **not** set as the default project, hover over the project name and click the **Switch Default Project in Azure Extension** icon (*note: the icon looks like 3 lines*).
 1. In the **Pick a project** window, select the subscription that has your Azure AI Foundry project.
 1. In the **Pick a project** window, select your Azure AI Foundry project.
+
+**Setup environment variables**
+1. In the terminal, run the command: `copy .env.example .env`
+1. Open your new `.env` file.
+1. Enter your `AZURE_AI_API_KEY="<your_Azure_AI_API_key>"` (note: The **Key** in the **Endpoint** section for your model deployment )
+1. Enter your `AZURE_AI_ENDPOINT="<your_Azure_AI_endpoint>"` (note: The **Target URI** in the Endpoint section for your model deployment; ex: https://{your-custom-endpoint}.openai.azure.com/openai/deployments/gpt-4o)
 
 **Start the Customer Sales Server**
 
