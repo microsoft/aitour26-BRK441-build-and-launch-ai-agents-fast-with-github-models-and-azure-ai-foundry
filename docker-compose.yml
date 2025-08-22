@@ -1,4 +1,4 @@
-name: ai-tour-26-zava-diy
+name: ai-tour-26
 
 networks:
   zava-network:
@@ -7,7 +7,7 @@ networks:
 services:
   db:
     image: pgvector/pgvector:pg17
-    container_name: ai-tour-26-zava-diy-pgvector-db
+    container_name: ai-tour-26
     ports:
       - "15432:5432"
     environment:
