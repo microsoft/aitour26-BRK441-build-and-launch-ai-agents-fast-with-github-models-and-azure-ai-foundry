@@ -7,3 +7,13 @@ torch>=2.7.1,<3.0.0
 transformers>=4.53.0,<5.0.0
 reportlab>=4.0.0,<5.0.0
 markdown>=3.5.0,<4.0.0
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+jinja2>=3.1.0
+python-multipart>=0.0.6
+websockets>=12.0
+mcp
+azure-ai-inference
+python-dotenv
+python-multipart
+aiofiles

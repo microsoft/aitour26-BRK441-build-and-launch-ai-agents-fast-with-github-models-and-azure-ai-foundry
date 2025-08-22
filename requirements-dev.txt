@@ -1,3 +1,1 @@
-
--r src/python/requirements.txt
-# -r data/requirements.txt
+-r data/requirements.txt
