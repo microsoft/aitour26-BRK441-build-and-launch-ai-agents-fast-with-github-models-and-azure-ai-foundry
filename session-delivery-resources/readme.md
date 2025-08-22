@@ -52,7 +52,7 @@ This demo is designed to be run in a development container for easy setup. The c
 - A web app of the Cora agent app
 
 #### Prerequisites
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed
 - Azure AI Foundry project with a **GPT-4o** model deployment
 - [Visual Studio Code](https://code.visualstudio.com)
 
@@ -85,7 +85,7 @@ If any extension is missing, install before moving forward.
 1. In the **Pick a project** window, select your Azure AI Foundry project.
 
 **Setup environment variables**
-1. In the terminal, run the command: `copy .env.example .env`
+1. In the terminal, run the command: `cp .env.example .env`
 1. Open your new `.env` file.
 1. Enter your `AZURE_AI_API_KEY="<your_Azure_AI_API_key>"` (note: The **Key** in the **Endpoint** section for your model deployment )
 1. Enter your `AZURE_AI_ENDPOINT="<your_Azure_AI_endpoint>"` (note: The **Target URI** in the Endpoint section for your model deployment up until the deployment name; ex: https://{your-custom-endpoint}-resource.cognitiveservices.azure.com/openai/deployments/gpt-4o)
@@ -97,6 +97,6 @@ If any extension is missing, install before moving forward.
 
 **Start the Cora web app**
 
-1. In the terminal, run the command `python app.py`.
+1. In the terminal, run the command `python src/web_app/app.py`.
 1. In the browser, navigate to [htts://localhost:8000](http://localhost:8000).
 1. Confirm that the green **Connected** label displays in the top-right of the UI.
