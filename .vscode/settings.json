@@ -1,0 +1,27 @@
+{
+    "chat.mcp.serverSampling": {
+        "workspace/.vscode/mcp.json: mcp-zava-sales-devcontainer": {
+            "allowedModels": [
+                "github.copilot-chat/gpt-4.1"
+            ]
+        }
+    },
+    "python.analysis.extraPaths": [
+        "./src/python/workshop"
+    ],
+    "remote.portsAttributes": {
+        "8005": {
+            "label": "Web App",
+            "onAutoForward": "notify"
+        },
+        "8006": {
+            "label": "Agent Service",
+            "onAutoForward": "silent"
+        }
+        ,
+        "8000": {
+            "label": "Agent Service",
+            "onAutoForward": "silent"
+        }
+    }
+}

@@ -1,84 +1,38 @@
-# Welcome AI Tour 26 Creators!
-
-Thanks for creating content for AI Tour 26.
-
-One of our opportunities from FY25 was make a more consistent experience for attendees.  Following this template, and keeping users in these repos, will help us achieve this opportunity for this year's AI Tour.
-
-Steps:
-
-## Docs using MKDocs
-If you are interested in using mkdocs, this repo is configured for it.
-1. update the `mkdocs.yml` file to reference your session. Look particularly for the `site_name`, `site_author`, and `repo_name` tags.
-1. Subfolders in the docs folder will show up as tabs in the navigation bar.
-
-If you want to disable mkdocs:
-1. Delete the mkdocs.yml file. 
-1. Delete the references to it in [docs/README.md](./docs/README.md)
-1. Delete the docs/assets folder and its contents.
-
-## Other folders
-Note the data, docs, src, lab, session-delivery-resources folders. 
-1. Remove folders that you dont need.
-1. Please keep and use the folders that you do need.  e.g. put your data in the data folder, and put your docs in the docs folder.
-
-## Update Readme
-1. Fill out the content below in this file, below the banner graphic.
-
-## Update Repo Info
-
-1. Note the data, docs, src, lab, session-delivery-resources folders. 
-
-    1. Remove folders that you dont need, but please keep and use the folders that you do need.  e.g. put your data in the data folder, and put your docs in the docs folder.
-
-1. Fill out the content below in this file, below the banner graphic.
-
-1. Update the Repo Info for this repo 
-    1. Click the gear icon⚙️ in the upper right.
-    1. Set a good description of this repo.
-    1. Add the technologies that you're using in this session.  E.g. the same items that are in the Technologies Used section below.
-
-1. Please embed links to Learn with your campaign codes!
-
-## Questions?
-Send them to Mike Kinsman, Erik Weis, and cc Anthony Bartolo.
-
-## Last step
-Delete this line and everything above it!
-
-
 <p align="center">
 <img src="img/Banner-MS-AI-Tour-26.png" alt="decorative banner" width="1200"/>
 </p>
 
 # [Microsoft AI Tour 2026](https://aitour.microsoft.com)
 
-## 🔥BRKXXX: Build & Launch LLM Apps Fast with GitHub Models + Azure AI Foundry
+## 🔥BRK441: Build and launch AI agents fast with GitHub Models and Azure AI Foundry
 
 If you will be delivering this session, check the [session-delivery-sources](./session-delivery-resources/) folder for slides, scripts, and other resources.
 
 ### Session Description
 
-*Add Session Description*
-
+Build and ship AI agents faster with GitHub Models and Azure. Prototype with open models, scale with Azure AI Foundry models, and streamline workflows using the AI Toolkit in VS Code. Experiment with models and prompts, evaluate agent responses, then move from prototype to cloud with cutting-edge developer tools.
 
 ### 🧠 Learning Outcomes
 
 By the end of this session, learners will be able to:
 
--  
--
--
+- Explore and compare models with the AI Toolkit Playground; iterate over prompts using the Agent Builder and evaluate results on a test dataset.
+- Move from prototype to code, combining your models and prompts with your app code with Visual Studio Code and Azure AI Foundry.
+- Go smoothly into production by leveraging pre-built enterprise-ready features of Azure AI Foundry to deploy, safeguard and monitor your AI agent over time.
 
 ### 💻 Technologies Used
 
-1.
-1.
-1.
+1. Visual Studio Code
+1. AI Toolkit extension for Visual Studio Code
+1. GitHub Copilot Agent Mode
+1. GitHub Copilot for Azure
 
 ### 🔗 Session Resources
 | Resources          | Links                             | Description        |
 |:-------------------|:----------------------------------|:-------------------|
-| Additional Resources for this session | https://learn.microsoft.com | Links specific to this session |
+| AI Toolkit | https://aka.ms/AIToolkit |  A comprehensive extension that empowers developers and AI engineers to build, test, and deploy intelligent applications using generative AI models |
+| GitHub Copilot Agent Mode | https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode |  With chat agent mode in Visual Studio Code, you can use natural language to specify a high-level task, and let AI autonomously reason about the request, plan the work needed, and apply the changes to your codebase. |
+| GitHub Copilot for Azure | https://learn.microsoft.com/azure/developer/github-copilot-azure/get-started |  Get started with GitHub Copilot for Azure to streamline your development workflow and enhance your productivity on the Azure platform. |
 
 ### 📚 Continued Learning Resources
 | Resources          | Links                             | Description        |
@@ -101,19 +55,18 @@ By the end of this session, learners will be able to:
 
 <table>
 <tr>
-    <td align="center"><a href="http://github.com/mikekinsman">
-        <img src="https://github.com/mikekinsman.png" width="100px;" alt="INSERT NAME HERE"
+    <td align="center"><a href="http://github.com/aprilgitens">
+        <img src="https://github.com/aprilgittens.png" width="100px;" alt="April Gittens"
 "/><br />
-        <sub><b> INSERT NAME HERE
+        <sub><b> April Gittens
 </b></sub></a><br />
-            <a href="https://github.com/mikekinsman" title="talk">📢</a> 
+            <a href="https://github.com/aprilgittens" title="talk">📢</a> 
     </td>
-    <td align="center"><a href="http://github.com/mikekinsman">
-        <img src="https://github.com/mikekinsman.png" width="100px;" alt="INSERT NAME HERE
-"/><br />
-        <sub><b>INSERT NAME HERE
+    <td align="center"><a href="http://github.com/bethanyjep">
+        <img src="https://github.com/bethanyjep.png" width="100px;" alt="Bethany Jepchumba"/><br />
+        <sub><b>Bethany Jepchumba
 </b></sub></a><br />
-            <a href="https://github.com/mikekinsman" title="talk">📢</a> 
+            <a href="https://github.com/bethanyjep" title="talk">📢</a> 
     </td>
 </tr></table>
 
