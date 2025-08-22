@@ -17,3 +17,4 @@ azure-ai-inference
 python-dotenv
 python-multipart
 aiofiles
+asyncpg
