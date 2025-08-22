@@ -68,7 +68,7 @@ class MCPClient:
         # To authenticate with the model you will need to generate a personal access token (PAT) in your GitHub settings.
         # Create your PAT token by following instructions here: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
         self.azureai = ChatCompletionsClient(
-            endpoint = AzureKeyCredential(os.environ["AZURE_AI_ENDPOINT"]),
+            endpoint = os.environ["AZURE_AI_ENDPOINT"],
             credential = AzureKeyCredential(os.environ["AZURE_AI_API_KEY"]),
             api_version = "2025-01-01-preview",
         )
@@ -241,7 +241,7 @@ async def initialize_mcp_client():
                 "zava-sales-analysis", 
                 "python", 
                 [
-                    "/workspace/src/python/mcp_server/sales_analysis/sales_analysis.py",
+                    "/workspace/src/mcp_server/sales_analysis/sales_analysis.py",
                     "--stdio",
                     "--RLS_USER_ID=00000000-0000-0000-0000-000000000000"
                 ],
@@ -253,7 +253,7 @@ async def initialize_mcp_client():
                 "zava-customer-sales", 
                 "python", 
                 [
-                    "/workspace/src/python/mcp_server/customer_sales/customer_sales.py",
+                    "/workspace/src/mcp_server/customer_sales/customer_sales.py",
                     "--stdio",
                     "--RLS_USER_ID=00000000-0000-0000-0000-000000000000"
                 ],
