@@ -25,13 +25,13 @@ The breakout is divided into multiple sections including 32 slides and 6 demos.
 
 | Time        | Description 
 --------------|-------------
-0:00 - 0:00   | Intro and overview
-0:00 - 0:00   | GenAI ops
-0:00 - 0:00   | Meet the models
-0:00 - 0:00   | Design your agent
-0:00 - 0:00   | Evaluate your agent responses
-0:00 - 0:00   | From prototype to production
-0:00 - 0:00   | Wrap up and Q&A
+0:00 - 3:12   | Intro and overview
+3:13 - 4:41   | GenAI ops
+4:42 - 10:39   | Meet the models
+10:40 - 18:07   | Design your agent
+18:08 - 30:02   | Evaluate your agent responses
+30:03 - 37:13   | From prototype to production
+37:14 - 41:00  | Wrap up and Q&A
 
 ### 🖥️Demos
 
