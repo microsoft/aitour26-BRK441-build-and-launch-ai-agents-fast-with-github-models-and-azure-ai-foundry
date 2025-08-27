@@ -35,14 +35,15 @@ The breakout is divided into multiple sections including 32 slides and 6 demos.
 
 ### 🖥️Demos
 
-| Demo        | Description 
---------------|-------------
-[Explore and compare models](/docs/demos/explore-compare-models.md)   | Browse the model **Catalog** in the AI Toolkit and compare 2 models within the **Playground**
-[Create agents with Agent Builder](/docs/demos/create-agents.md)   | Create the Cora agent in the **Agent Builder** and define it's system prompt
-[Add tools to an agent in Agent Builder](/docs/demos/add-tools.md)   | Connect the Cora agent to the **Zava MCP server** and add the **get_products_by_name** tool
-[Evaluate agent responses](/docs/demos/evaluate-agent-responses.md)   | Run both manual and AI-assisted evaluations for the agent output
-[Export agent code](/docs/demos/export-agent-code.md)   | Export the code from the **Agent Builder** for the Cora agent
-[Cora app](/docs/demos/cora-app.md)   | Chat with the Cora agent live via the agent UI
+| Demo        | Description | Video 
+--------------|-------------|-------------
+Full Session | Full recording of the session | [Video](https://assetsmanagement952e.blob.core.windows.net/assets/BRK441%20Build%20and%20launch%20AI%20agents%20fast%20with%20GitHub%20Models%20and%20Azure%20AI%20Foundry/full-session_V1.0.mp4)
+[Explore and compare models](/docs/demos/explore-compare-models.md)   | Browse the model **Catalog** in the AI Toolkit and compare 2 models within the **Playground** | [Demo video](https://assetsmanagement952e.blob.core.windows.net/assets/BRK441%20Build%20and%20launch%20AI%20agents%20fast%20with%20GitHub%20Models%20and%20Azure%20AI%20Foundry/demo-explore-compare-models_V1.0.mp4)
+[Create agents with Agent Builder](/docs/demos/create-agents.md)   | Create the Cora agent in the **Agent Builder** and define it's system prompt |  [Demo video](https://assetsmanagement952e.blob.core.windows.net/assets/BRK441%20Build%20and%20launch%20AI%20agents%20fast%20with%20GitHub%20Models%20and%20Azure%20AI%20Foundry/demo-agent-builder_V1.0.mp4)
+[Add tools to an agent in Agent Builder](/docs/demos/add-tools.md)   | Connect the Cora agent to the **Zava MCP server** and add the **get_products_by_name** tool | [Demo video](https://assetsmanagement952e.blob.core.windows.net/assets/BRK441%20Build%20and%20launch%20AI%20agents%20fast%20with%20GitHub%20Models%20and%20Azure%20AI%20Foundry/demo-add-tools_V1.0.mp4)
+[Evaluate agent responses](/docs/demos/evaluate-agent-responses.md)   | Run both manual and AI-assisted evaluations for the agent output | [Demo video](https://assetsmanagement952e.blob.core.windows.net/assets/BRK441%20Build%20and%20launch%20AI%20agents%20fast%20with%20GitHub%20Models%20and%20Azure%20AI%20Foundry/demo-evaluation_V1.0.mp4)
+[Export agent code](/docs/demos/export-agent-code.md)   | Export the code from the **Agent Builder** for the Cora agent | [Demo video](https://assetsmanagement952e.blob.core.windows.net/assets/BRK441%20Build%20and%20launch%20AI%20agents%20fast%20with%20GitHub%20Models%20and%20Azure%20AI%20Foundry/demo-export-code_V1.0.mp4)
+[Cora app](/docs/demos/cora-app.md)   | Chat with the Cora agent live via the agent UI | [Demo video](https://assetsmanagement952e.blob.core.windows.net/assets/BRK441%20Build%20and%20launch%20AI%20agents%20fast%20with%20GitHub%20Models%20and%20Azure%20AI%20Foundry/demo-cora-app_V1.0.mp4)
 
 ### 🏋️Preparation
 This demo is designed to be run in a development container for easy setup. The container includes the following:
