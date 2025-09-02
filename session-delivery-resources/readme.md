@@ -13,7 +13,7 @@ Prior to delivering the workshop please:
 
 | Resources          | Links                            | Description |
 |-------------------|----------------------------------|-------------------|
-| Session Delivery Deck     |  [Deck](https://aka.ms/) | The session delivery slides |
+| Session Delivery Deck     |  [Deck](https://aka.ms/AAxryus) | The session delivery slides |
 
 
 
@@ -37,13 +37,13 @@ The breakout is divided into multiple sections including 32 slides and 6 demos.
 
 | Demo        | Description | Video 
 --------------|-------------|-------------
-Full Session | Full recording of the session | [Video](https://assetsmanagement952e.blob.core.windows.net/assets/BRK441%20Build%20and%20launch%20AI%20agents%20fast%20with%20GitHub%20Models%20and%20Azure%20AI%20Foundry/full-session_V1.0.mp4)
-[Explore and compare models](/docs/demos/explore-compare-models.md)   | Browse the model **Catalog** in the AI Toolkit and compare 2 models within the **Playground** | [Demo video](https://assetsmanagement952e.blob.core.windows.net/assets/BRK441%20Build%20and%20launch%20AI%20agents%20fast%20with%20GitHub%20Models%20and%20Azure%20AI%20Foundry/demo-explore-compare-models_V1.0.mp4)
-[Create agents with Agent Builder](/docs/demos/create-agents.md)   | Create the Cora agent in the **Agent Builder** and define it's system prompt |  [Demo video](https://assetsmanagement952e.blob.core.windows.net/assets/BRK441%20Build%20and%20launch%20AI%20agents%20fast%20with%20GitHub%20Models%20and%20Azure%20AI%20Foundry/demo-agent-builder_V1.0.mp4)
-[Add tools to an agent in Agent Builder](/docs/demos/add-tools.md)   | Connect the Cora agent to the **Zava MCP server** and add the **get_products_by_name** tool | [Demo video](https://assetsmanagement952e.blob.core.windows.net/assets/BRK441%20Build%20and%20launch%20AI%20agents%20fast%20with%20GitHub%20Models%20and%20Azure%20AI%20Foundry/demo-add-tools_V1.0.mp4)
-[Evaluate agent responses](/docs/demos/evaluate-agent-responses.md)   | Run both manual and AI-assisted evaluations for the agent output | [Demo video](https://assetsmanagement952e.blob.core.windows.net/assets/BRK441%20Build%20and%20launch%20AI%20agents%20fast%20with%20GitHub%20Models%20and%20Azure%20AI%20Foundry/demo-evaluation_V1.0.mp4)
-[Export agent code](/docs/demos/export-agent-code.md)   | Export the code from the **Agent Builder** for the Cora agent | [Demo video](https://assetsmanagement952e.blob.core.windows.net/assets/BRK441%20Build%20and%20launch%20AI%20agents%20fast%20with%20GitHub%20Models%20and%20Azure%20AI%20Foundry/demo-export-code_V1.0.mp4)
-[Cora app](/docs/demos/cora-app.md)   | Chat with the Cora agent live via the agent UI | [Demo video](https://assetsmanagement952e.blob.core.windows.net/assets/BRK441%20Build%20and%20launch%20AI%20agents%20fast%20with%20GitHub%20Models%20and%20Azure%20AI%20Foundry/demo-cora-app_V1.0.mp4)
+Full Session | Full recording of the session | [Video](https://aka.ms/AAxq4rj)
+[Explore and compare models](/docs/demos/explore-compare-models.md)   | Browse the model **Catalog** in the AI Toolkit and compare 2 models within the **Playground** | [Demo video](https://aka.ms/AAxqj4z)
+[Create agents with Agent Builder](/docs/demos/create-agents.md)   | Create the Cora agent in the **Agent Builder** and define it's system prompt |  [Demo video](https://aka.ms/AAxq4rm)
+[Add tools to an agent in Agent Builder](/docs/demos/add-tools.md)   | Connect the Cora agent to the **Zava MCP server** and add the **get_products_by_name** tool | [Demo video](https://aka.ms/AAxqc9k)
+[Evaluate agent responses](/docs/demos/evaluate-agent-responses.md)   | Run both manual and AI-assisted evaluations for the agent output | [Demo video](https://aka.ms/AAxqc9h)
+[Export agent code](/docs/demos/export-agent-code.md)   | Export the code from the **Agent Builder** for the Cora agent | [Demo video](https://aka.ms/AAxq4rl)
+[Cora app](/docs/demos/cora-app.md)   | Chat with the Cora agent live via the agent UI | [Demo video](https://aka.ms/AAxqj51)
 
 ### 🏋️Preparation
 This demo is designed to be run in a development container for easy setup. The container includes the following:
@@ -62,6 +62,9 @@ This demo is designed to be run in a development container for easy setup. The c
 1. Fork and clone this repository in Visual Studio Code.
 1. When prompted by Visual Studio Code, select to "Reopen in Container". Alternatively, open the **Command Palette** (i.e. CTRL/CMD+Shift+P) and enter **Dev Containers: Reopen in Container**.
 1. Wait for the setup to complete. The dev container will build automatically with all dependencies pre-installed. This includes PostgresSQL with pgvector extension, a Python environment, and all required packages.
+
+
+> **Note**: Check if postgres database is populated, if not run the following commands in the terminal: ``chmod +x scripts/init-db.sh``
 
 **Confirm extensions are installed**
 
@@ -92,7 +95,47 @@ If any extension is missing, install before moving forward.
 
 **Start the Customer Sales Server**
 
-1. Open the **.vscode/mcp.json** file.
+1. Create a **.vscode/mcp.json** file.
+1. Add the following content to the **.vscode/mcp.json** file:
+```json
+{
+    "servers": {
+        "zava-sales-analysis-stdio": {
+            "type": "stdio",
+            "command": "python",
+            "args": [
+                "${workspaceFolder}/src/mcp_server/sales_analysis/sales_analysis.py",
+                "--stdio",
+                "--RLS_USER_ID=00000000-0000-0000-0000-000000000000"
+            ]
+        },
+        "zava-customer-sales-stdio": {
+            "type": "stdio",
+            "command": "python",
+            "args": [
+                "${workspaceFolder}/src/python/mcp_server/customer_sales/customer_sales.py",
+                "--stdio",
+                "--RLS_USER_ID=00000000-0000-0000-0000-000000000000"
+            ]
+        },
+        "zava-customer-sales-semantic-stdio": {
+            "type": "stdio",
+            "command": "python",
+            "args": [
+                "${workspaceFolder}/src/mcp_server/customer_sales/customer_sales_semantic_search.py",
+                "--stdio",
+                "--RLS_USER_ID=00000000-0000-0000-0000-000000000000"
+            ]
+        },
+        "zava-diy-http": {
+            "url": "http://127.0.0.1:8000/mcp",
+            "type": "http"
+        }
+    },
+    "inputs": []
+}
+```
+
 1. Click **Start** above the **zava-customer-sales-stdio** server.
 
 **Start the Cora web app**
