@@ -1,4 +1,4 @@
-# Demo Instructions
+# Demo Instructions: Explore and Compare Models
 
 [**Instructions**: Open the **Model Catalog** and scroll down to view models]
 Here in the AI Toolkit, I’ll open up the Model Catalog to browse the models that are available. Since Serena began in the prototyping stage, she likely started w/ one of the GitHub models. They’re free to use and are a great option for figuring out which model may be best for powering the Cora agent.​
