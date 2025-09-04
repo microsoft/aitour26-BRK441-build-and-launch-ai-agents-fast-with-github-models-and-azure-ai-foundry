@@ -113,7 +113,7 @@ If any extension is missing, install before moving forward.
             "type": "stdio",
             "command": "python",
             "args": [
-                "${workspaceFolder}/src/python/mcp_server/customer_sales/customer_sales.py",
+                "${workspaceFolder}/src/mcp_server/customer_sales/customer_sales.py",
                 "--stdio",
                 "--RLS_USER_ID=00000000-0000-0000-0000-000000000000"
             ]
