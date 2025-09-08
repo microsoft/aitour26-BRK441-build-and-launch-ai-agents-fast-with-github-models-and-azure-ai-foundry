@@ -14,6 +14,7 @@ Prior to delivering the workshop please:
 | Resources          | Links                            | Description |
 |-------------------|----------------------------------|-------------------|
 | Session Delivery Deck     |  [Deck](https://aka.ms/AAxryus) | The session delivery slides |
+| Full Session | [Recording Link](https://youtu.be/uX66bjIKiaE) | The full session presentation |
 
 
 
@@ -37,7 +38,6 @@ The breakout is divided into multiple sections including 32 slides and 6 demos.
 
 | Demo        | Description | Video 
 --------------|-------------|-------------
-Full Session | Full recording of the session | [Video](https://aka.ms/AAxq4rj)
 [Explore and compare models](/docs/demos/explore-compare-models.md)   | Browse the model **Catalog** in the AI Toolkit and compare 2 models within the **Playground** | [Demo video](https://aka.ms/AAxqj4z)
 [Create agents with Agent Builder](/docs/demos/create-agents.md)   | Create the Cora agent in the **Agent Builder** and define it's system prompt |  [Demo video](https://aka.ms/AAxq4rm)
 [Add tools to an agent in Agent Builder](/docs/demos/add-tools.md)   | Connect the Cora agent to the **Zava MCP server** and add the **get_products_by_name** tool | [Demo video](https://aka.ms/AAxqc9k)
