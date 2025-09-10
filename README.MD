@@ -44,10 +44,6 @@ By the end of this session, learners will be able to:
 | Azure AI Foundry Community Discord | [![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)| Connect with the Azure AI Foundry Community! |
 | Learn at AI Tour | https://aka.ms/LearnAtAITour | Continue learning on Microsoft Learn |
 
-### 🌐 Multi-Language Support
-
-*languages will go here when its time to localize*
-
 ## Content Owners
 
 <!-- TODO: Add yourself as a content owner
