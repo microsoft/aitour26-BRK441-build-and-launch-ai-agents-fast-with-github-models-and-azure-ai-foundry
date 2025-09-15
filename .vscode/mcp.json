@@ -1,0 +1,36 @@
+{
+	"servers": {
+		"zava-sales-analysis-stdio": {
+			"type": "stdio",
+			"command": "python",
+			"args": [
+				"${workspaceFolder}/src/python/mcp_server/sales_analysis/sales_analysis.py",
+				"--stdio",
+				"--RLS_USER_ID=00000000-0000-0000-0000-000000000000"
+			]
+		},
+		"zava-customer-sales-stdio": {
+			"type": "stdio",
+			"command": "python",
+			"args": [
+				"${workspaceFolder}/src/python/mcp_server/customer_sales/customer_sales.py",
+				"--stdio",
+				"--RLS_USER_ID=00000000-0000-0000-0000-000000000000"
+			]
+		},
+		"zava-customer-sales-semantic-search-stdio": {
+			"type": "stdio",
+			"command": "python",
+			"args": [
+				"${workspaceFolder}/src/python/mcp_server/customer_sales/customer_sales_semantic_search.py",
+				"--stdio",
+				"--RLS_USER_ID=00000000-0000-0000-0000-000000000000"
+			]
+		},
+		"zava-diy-http": {
+			"url": "http://127.0.0.1:8000/mcp",
+			"type": "http"
+		}
+	},
+	"inputs": []
+}

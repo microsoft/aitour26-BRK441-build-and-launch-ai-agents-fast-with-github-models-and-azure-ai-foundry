@@ -23,11 +23,7 @@
                 "mathematic.vscode-pdf",
                 "ms-ossdata.vscode-pgsql",
                 "ms-azuretools.vscode-azureresourcegroups",
-                "ms-windows-ai-studio.windows-ai-studio",
-                "ms-vscode-remote.remote-containers"
-                // "ms-azuretools.vscode-docker",
-                // "ms-python.black-formatter",
-                // "charliermarsh.ruff"
+                "ms-windows-ai-studio.windows-ai-studio"
             ]
         }
     }

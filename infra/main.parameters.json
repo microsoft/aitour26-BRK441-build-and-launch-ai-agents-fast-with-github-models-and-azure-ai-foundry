@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "resourcePrefix": {
+      "value": "zava-agent-workshop"
+    },
+    "location": {
+      "value": "eastus"
+    },
+    "aiProjectFriendlyName": {
+      "value": "Zava Agent Service Workshop"
+    },
+    "aiProjectDescription": {
+      "value": "A standard project resource required for the agent setup."
+    },
+    "models": {
+      "value": [
+        {
+          "name": "gpt-4o-mini",
+          "format": "OpenAI",
+          "version": "2024-07-18",
+          "skuName": "GlobalStandard",
+          "capacity": 140
+        },
+        {
+          "name": "text-embedding-3-small",
+          "format": "OpenAI",
+          "version": "1",
+          "skuName": "GlobalStandard",
+          "capacity": 120
+        }
+      ]
+    }
+  }
+}

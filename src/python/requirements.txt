@@ -1,0 +1,16 @@
+aiohttp>=3.12.13,<4.0.0
+asyncpg>=0.30.0,<0.31.0
+azure-ai-agents==1.1.0b4
+azure-ai-projects==1.0.0b12
+azure-identity>=1.23.0,<2.0.0
+fastapi
+httpx>=0.28.1,<0.29.0
+mcp>=1.10.0,<2.0.0
+openai>=1.97.0, <2.0.0
+pandas>=2.3.0,<3.0.0
+python-dotenv>=1.1.1,<2.0.0
+python-multipart>=0.0.20, <0.0.30
+uvicorn[standard]>=0.35.0,<0.36.0
+azure-ai-inference
+jinja2
+aiofiles
