@@ -241,7 +241,7 @@ async def initialize_mcp_client():
                 "zava-sales-analysis", 
                 "python", 
                 [
-                    "/workspace/src/mcp_server/sales_analysis/sales_analysis.py",
+                    "/workspace/src/python/mcp_server/sales_analysis/sales_analysis.py",
                     "--stdio",
                     "--RLS_USER_ID=00000000-0000-0000-0000-000000000000"
                 ],
@@ -253,7 +253,7 @@ async def initialize_mcp_client():
                 "zava-customer-sales", 
                 "python", 
                 [
-                    "/workspace/src/mcp_server/customer_sales/customer_sales.py",
+                    "/workspace/src/python/mcp_server/customer_sales/customer_sales.py",
                     "--stdio",
                     "--RLS_USER_ID=00000000-0000-0000-0000-000000000000"
                 ],
@@ -313,7 +313,7 @@ async def upload_image(file: UploadFile = File(...)):
 @app.get("/", response_class=HTMLResponse)
 async def get_chat_page(request: Request):
     """Serve the main chat interface"""
-    return templates.TemplateResponse("chat.html", {"request": request})
+    return templates.TemplateResponse("index.html", {"request": request})
 
 @app.get("/health")
 async def health_check():
