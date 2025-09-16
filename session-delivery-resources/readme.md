@@ -63,9 +63,6 @@ This demo is designed to be run in a development container for easy setup. The c
 1. When prompted by Visual Studio Code, select to "Reopen in Container". Alternatively, open the **Command Palette** (i.e. CTRL/CMD+Shift+P) and enter **Dev Containers: Reopen in Container**.
 1. Wait for the setup to complete. The dev container will build automatically with all dependencies pre-installed. This includes PostgresSQL with pgvector extension, a Python environment, and all required packages.
 
-
-> **Note**: Check if postgres database is populated, if not run the following commands in the terminal: ``chmod +x scripts/init-db.sh``
-
 **Confirm extensions are installed**
 
 Confirm that the dev container has installed the following extensions:
@@ -100,6 +97,6 @@ If any extension is missing, install before moving forward.
 
 **Start the Cora web app**
 
-1. In the terminal, run the command `python src/web_app/app.py`.
+1. In the terminal, run the command `python src/python/web_app/web_app.py`.
 1. In the browser, navigate to [htts://localhost:8000](http://localhost:8000).
 1. Confirm that the green **Connected** label displays in the top-right of the UI.
