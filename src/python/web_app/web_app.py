@@ -15,6 +15,14 @@ from contextlib import AsyncExitStack
 import uuid
 from pathlib import Path
 
+# Resolve shared asset paths relative to this file (web_app.py)
+BASE_SRC_DIR = Path(__file__).resolve().parents[2]  # -> /workspace/src
+SHARED_STATIC_DIR = BASE_SRC_DIR / "shared" / "static"
+
+# Use shared/static when present; fall back to project-root static/templates
+STATIC_DIR = SHARED_STATIC_DIR if SHARED_STATIC_DIR.exists() else Path("static")
+TEMPLATES_DIR = STATIC_DIR if STATIC_DIR.exists() else Path("templates")
+
 # MCP imports
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
@@ -220,9 +228,9 @@ class MCPClient:
 app = FastAPI(title="AI Agent Chat Demo", version="1.0.0")
 
 # Mount static files and templates
-app.mount("/static", StaticFiles(directory="static"), name="static")
-app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
-templates = Jinja2Templates(directory="templates")
+app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
+app.mount("/uploads", StaticFiles(directory=str(UPLOAD_DIR)), name="uploads")
+templates = Jinja2Templates(directory=str(TEMPLATES_DIR))
 
 # Global MCP client instance
 mcp_client = None
@@ -425,9 +433,9 @@ async def shutdown_event():
 
 if __name__ == "__main__":
     uvicorn.run(
-        "app:app",
+        app,
         host="0.0.0.0",
         port=8000,
-        reload=True,
+        reload=False,
         log_level="info"
     )
