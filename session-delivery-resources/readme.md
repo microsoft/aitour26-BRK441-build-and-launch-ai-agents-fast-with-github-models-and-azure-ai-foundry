@@ -95,47 +95,7 @@ If any extension is missing, install before moving forward.
 
 **Start the Customer Sales Server**
 
-1. Create a **.vscode/mcp.json** file.
-1. Add the following content to the **.vscode/mcp.json** file:
-```json
-{
-    "servers": {
-        "zava-sales-analysis-stdio": {
-            "type": "stdio",
-            "command": "python",
-            "args": [
-                "${workspaceFolder}/src/mcp_server/sales_analysis/sales_analysis.py",
-                "--stdio",
-                "--RLS_USER_ID=00000000-0000-0000-0000-000000000000"
-            ]
-        },
-        "zava-customer-sales-stdio": {
-            "type": "stdio",
-            "command": "python",
-            "args": [
-                "${workspaceFolder}/src/mcp_server/customer_sales/customer_sales.py",
-                "--stdio",
-                "--RLS_USER_ID=00000000-0000-0000-0000-000000000000"
-            ]
-        },
-        "zava-customer-sales-semantic-stdio": {
-            "type": "stdio",
-            "command": "python",
-            "args": [
-                "${workspaceFolder}/src/mcp_server/customer_sales/customer_sales_semantic_search.py",
-                "--stdio",
-                "--RLS_USER_ID=00000000-0000-0000-0000-000000000000"
-            ]
-        },
-        "zava-diy-http": {
-            "url": "http://127.0.0.1:8000/mcp",
-            "type": "http"
-        }
-    },
-    "inputs": []
-}
-```
-
+1. Navigate to the **.vscode/mcp.json** file.
 1. Click **Start** above the **zava-customer-sales-stdio** server.
 
 **Start the Cora web app**
